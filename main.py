@@ -127,11 +127,14 @@ while keep_going:
     if r_action == '1' or r_action.lower() == 'store a new user':
         my_handler.create_new_user()
 
-    if r_action == '2' or r_action.lower() == 'find an existing user':
+    elif r_action == '2' or r_action.lower() == 'find an existing user':
         my_handler.get_stored_user()
 
-    if r_action == '3' or r_action.lower() == 'show all users':
+    elif r_action == '3' or r_action.lower() == 'show all users':
         my_handler.show_all_users()
 
-    if r_action == '4' or r_action.lower() == 'shutdown':
+    elif r_action == '4' or r_action.lower() == 'shutdown':
         my_handler.shutdown()
+
+    else:
+        print('\nThat is not a valid input')
