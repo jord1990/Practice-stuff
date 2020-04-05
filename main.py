@@ -26,9 +26,8 @@ class InfoHandler():
 
         # Tries converting the answer to an int and back
         try:
-            answer = int(answer)
+            _ = int(answer)
             is_int = True
-            answer = str(answer)
             return is_int
 
         except ValueError:
@@ -36,7 +35,7 @@ class InfoHandler():
             is_int = False
             return is_int
 
-    def get_input(self):
+    def create_new_user(self):
         """Handles getting new inputs from users"""
 
         # creates an empty dict to store the inputs in
@@ -126,7 +125,7 @@ while keep_going:
     r_action = input(menu_text)
 
     if r_action == '1' or r_action.lower() == 'store a new user':
-        my_handler.get_input()
+        my_handler.create_new_user()
 
     if r_action == '2' or r_action.lower() == 'find an existing user':
         my_handler.get_stored_user()
