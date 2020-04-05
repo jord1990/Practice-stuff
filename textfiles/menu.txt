@@ -1,0 +1,8 @@
+
+Please pick an option
+
+1. Store a new user
+2. Find an existing user
+3. Show all users
+4. Shutdown
+
